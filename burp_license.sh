@@ -46,10 +46,10 @@ if [ ! -e "$BurpLoaderKeygen" ]; then
     check_dependencies
     #download BurpLoaderKeygen
     echo 'Starting Downlaod BurpLoaderKeygen'
-    download 'https://ghproxy.com/https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases/download/1.15/BurpLoaderKeygen.jar' "$BurpLoaderKeygen"
+    download 'https://mrxn.net/content/uploadfile/202308/3ef21691155956.jar' "$BurpLoaderKeygen"
     if [ ! -e "$BurpLoaderKeygen" ]; then
         echo "Download failed. Retrying with default URL ..."
-        download 'https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases/download/1.15/BurpLoaderKeygen.jar' "$BurpLoaderKeygen"
+        download 'https://cdn.mrxn.net?url=https%3A%2F%2Fmrxn.net%2Fcontent%2Fuploadfile%2F202308%2F3ef21691155956.jar' "$BurpLoaderKeygen"
         if [ ! -e "$BurpLoaderKeygen" ]; then
             echo "Download failed. Please try again later or download the file manually."
             exit
