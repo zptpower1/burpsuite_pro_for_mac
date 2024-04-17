@@ -24,7 +24,7 @@ EOF
 download() {
     local url="$1"
     local file="$2"
-    wget -c -t 3 -U --no-check-certificate 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36' -O "$file" "$url"
+    wget -c -t 3 -U 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36' --no-check-certificate -O "$file" "$url"
 }
 check_dependencies() {
     if ! ping -q -c 1 -W 1 bing.com >/dev/null; then
